@@ -83,6 +83,10 @@
   />
   {{ end }}
 
+  {{ if or .Params.math .Site.Params.math }}
+    {{ partial "math.html" . }}
+  {{ end }}
+
   <!-- Misc -->
   {{ if or hugo.IsProduction (eq site.Params.env "production") }}
   <!---->

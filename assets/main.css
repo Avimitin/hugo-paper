@@ -656,7 +656,6 @@ body {
 
 .prose :where(blockquote):not(:where([class~="not-prose"] *)) {
   font-weight: 500;
-  font-style: italic;
   color: var(--tw-prose-quotes);
   border-left-width: 0.25rem;
   border-left-color: var(--tw-prose-quote-borders);
@@ -664,14 +663,6 @@ body {
   margin-top: 1.6em;
   margin-bottom: 1.6em;
   padding-left: 1em;
-}
-
-.prose :where(blockquote p:first-of-type):not(:where([class~="not-prose"] *))::before {
-  content: open-quote;
-}
-
-.prose :where(blockquote p:last-of-type):not(:where([class~="not-prose"] *))::after {
-  content: close-quote;
 }
 
 .prose :where(h1):not(:where([class~="not-prose"] *)) {

@@ -21,6 +21,10 @@
 
   <section>{{ .Content }}</section>
 
+  {{ if or .Params.math .Site.Params.math }}
+    {{ partial "math.html" . }}
+  {{ end }}
+
   <!-- Post Tags -->
   {{ if .Params.tags }}
   <footer class="mt-12 flex flex-wrap">

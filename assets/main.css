@@ -1620,8 +1620,6 @@ article {
 }
 
 article pre {
-  margin-left: -2rem;
-  margin-right: -2rem;
   padding: 2rem !important;
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -1803,4 +1801,15 @@ article blockquote {
   .lg\:transition-none {
     transition-property: none;
   }
+}
+
+details {
+  border-radius: .375rem;
+  box-shadow: 0px 0px 5px #2b2b2b52;
+  padding: 1.5rem !important;
+}
+
+article details blockquote {
+  padding-left: 0.5rem !important;
+  margin-left: calc(0.5rem * -1) !important;
 }

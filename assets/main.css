@@ -739,16 +739,15 @@ body {
 
 .prose :where(code):not(:where([class~="not-prose"] *)) {
   color: var(--tw-prose-code);
-  font-weight: 600;
-  font-size: 0.875em;
+  font-weight: 300;
+  font-size: 85%;
+  border-radius: 6px;
+  padding: .2em .4em;
+  background-color: rgba(175,184,193,0.2);
 }
 
-.prose :where(code):not(:where([class~="not-prose"] *))::before {
-  content: "`";
-}
-
-.prose :where(code):not(:where([class~="not-prose"] *))::after {
-  content: "`";
+:is(.dark code) {
+  background-color: rgba(110,118,129,0.4);
 }
 
 .prose :where(a code):not(:where([class~="not-prose"] *)) {
